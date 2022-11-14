@@ -13,5 +13,5 @@ class ClusterConstruct(cdk.Construct):
         self.cluster = eks.Cluster(
             scope=self,
             id=self._cluster_name,
-            version=eks.KubernetesVersion.V1_18
+            version=eks.KubernetesVersion.V1_23
         )
